@@ -46,17 +46,9 @@
         - 12.3
         - 12.4
 
-- src: "newrelic-infra-{version}-1.el{os_version}.{arch}.rpm"
-  arch:
-    - x86_64
-  uploads:
-    - type: yum
-      dest: "{dest_prefix}linux/yum/al/{os_version}/{arch}/"
-      os_version:
-        - 2
-
 - src: "newrelic-infra-{version}-1.al{os_version}.{arch}.rpm"
   arch:
+    - x86_64
     - arm
     - arm64
   uploads:
