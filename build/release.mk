@@ -67,8 +67,8 @@ release/pkg: release/get-integrations-amd64
 release/pkg: release/get-integrations-arm64
 release/pkg: release/get-integrations-arm
 release/pkg: release/get-fluentbit-linux-amd64
-#release/pkg: release/get-fluentbit-linux-arm
-#release/pkg: release/get-fluentbit-linux-arm64
+release/pkg: release/get-fluentbit-linux-arm
+release/pkg: release/get-fluentbit-linux-arm64
 	@echo "=== [release/build] PRE-RELEASE compiling all binaries, creating packages, archives"
 	$(GORELEASER_BIN) release $(GORELEASER_CONFIG) $(PKG_FLAGS)
 
