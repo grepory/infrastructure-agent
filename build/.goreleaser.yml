@@ -1255,13 +1255,13 @@ nfpms:
 ###                              ARM/AL2                                    ###
 ###############################################################################
 ###############################################################################
-  - id: centos-8-infrastructure-agent-arm
+  - id: amazonlinux-2-infrastructure-agent-arm
     builds:
       - linux-newrelic-infra-fpm-arm
       - linux-newrelic-infra-ctl-fpm-arm
       - linux-newrelic-infra-service-fpm-arm
     package_name: newrelic-infra
-    file_name_template: "newrelic-infra-{{ .Env.TAG }}-1.el8.{{ .Arch }}"
+    file_name_template: "newrelic-infra-{{ .Env.TAG }}-1.al2.{{ .Arch }}"
     vendor: 'New Relic, Inc.'
     homepage: 'https://docs.newrelic.com/docs/release-notes/infrastructure-release-notes/infrastructure-agent-release-notes'
     maintainer: 'caos-team@newrelic.com'
@@ -1305,7 +1305,7 @@ nfpms:
       - /var/log/newrelic-infra
       - /var/run/newrelic-infra
     epoch: 0
-    release: 1.el8
+    release: 1.al2
 
     # Scripts to execute during the installation of the package.
     scripts:
