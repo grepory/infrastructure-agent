@@ -282,6 +282,9 @@ nfpms:
     section: default
     # Priority.
     priority: extra
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: debian-infrastructure-agent-upstart
     builds:
@@ -340,6 +343,9 @@ nfpms:
     section: default
     # Priority.
     priority: extra
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -407,6 +413,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-upstart.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: centos-7-infrastructure-agent
     builds:
@@ -483,6 +492,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: centos-8-infrastructure-agent
     builds:
@@ -560,6 +572,9 @@ nfpms:
 
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -622,6 +637,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-sysv.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.1-infrastructure-agent
     builds:
@@ -698,6 +716,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.2-infrastructure-agent
     builds:
@@ -774,6 +795,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.3-infrastructure-agent
     builds:
@@ -850,6 +874,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.4-infrastructure-agent
     builds:
@@ -926,6 +953,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 
 ###############################################################################
@@ -997,6 +1027,9 @@ nfpms:
     section: default
     # Priority.
     priority: extra
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -1077,6 +1110,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: centos-8-infrastructure-agent-arm
     builds:
@@ -1151,6 +1187,9 @@ nfpms:
 
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -1230,6 +1269,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.3-infrastructure-agent-arm
     builds:
@@ -1303,6 +1345,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.4-infrastructure-agent-arm
     builds:
@@ -1376,6 +1421,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -1446,6 +1494,9 @@ nfpms:
     section: default
     # Priority.
     priority: extra
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -1526,6 +1577,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: centos-8-infrastructure-agent-arm64
     builds:
@@ -1600,6 +1654,9 @@ nfpms:
 
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 ###############################################################################
 ###############################################################################
@@ -1679,6 +1736,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.3-infrastructure-agent-arm64
     builds:
@@ -1752,6 +1812,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
   - id: sle-12.4-infrastructure-agent-arm64
     builds:
@@ -1825,6 +1888,9 @@ nfpms:
         posttrans: "build/package/rpm/postinst-systemd.sh"
       summary: "New Relic Infrastructure Agent"
       group: default
+    # Recommended packages. If they fail to install installation of the agent will not be interrupted.
+    recommends:
+      - td-agent-bit
 
 release:
   disable: true
