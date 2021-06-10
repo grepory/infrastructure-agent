@@ -53,6 +53,6 @@
     - arm64
   uploads:
     - type: yum
-      dest: "{dest_prefix}linux/yum/al/{os_version}/{arch}/"
+      dest: "{dest_prefix}linux/yum/amazonlinux/{os_version}/{arch}/"
       os_version:
         - 2
