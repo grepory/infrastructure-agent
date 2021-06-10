@@ -1,6 +1,6 @@
 ####
 # newrelic_plugin_version - https://github.com/newrelic/newrelic-fluent-bit-output/releases
-#
+dock#
 # OS,newrelic_plugin_version
-linux,1.1.0
+linux,1.5.0
 windows,1.4.6
